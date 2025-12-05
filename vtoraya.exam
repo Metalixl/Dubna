@@ -1,0 +1,24 @@
+def hz(a):
+    o=[]
+    n=[]
+    p=[]
+    for i in a:
+        if i<0:
+            o.append(i)
+        if i==0:
+            n.append(i)
+        if i>0:
+            p.append(i)
+    r=o+n+p
+    return(r)
+def testhz():
+    if hz([1, 2, 3, 0, -1])==[-1, 0, 1, 2, 3]:
+        print('t')
+    else:
+        print('error')
+
+    if hz([0, 1, -2, 2])==[-2, 0, 1, 2]:
+        print('t')
+    else:
+        print('error')
+testhz()
